@@ -1,0 +1,31 @@
+{
+  "name": "jmcw-tech",
+  "description": "JMCW.tech website",
+  "homepage": "https://github.com/wongmjane/jmcw-tech",
+  "authors": [
+    "Jane Manchun Wong <jane@wongmjane.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wongmjane/jmcw-tech.git"
+  },
+  "dependencies": {
+    "intl": "^1.2.5",
+    "polymer": "^1.7.0",
+    "webcomponentsjs": "^0.7.23"
+  },
+  "devDependencies": {
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "^0.7.23"
+  }
+}

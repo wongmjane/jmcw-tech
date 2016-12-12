@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>jmcw.tech</title>
+    <meta name="description" content="Hello! My name is Jane Manchun Wong and this is my personal website.">
+
+    <link rel="manifest" href="/manifest_pwa.json">
+
+    <!-- <link rel="stylesheet" type="text/css" href="/src/entrypoint.css"> -->
+
+    <script>
+    window.Polymer = {
+      dom: 'shadow',
+      lazyRegister: true
+    }
+    </script>
+
+    <link rel="import" href="/src/jmcw-tech-app.html">
+
+  </head>
+  <body>
+    <jmcw-tech-app></jmcw-tech-app>
+    <script async defer>
+    if (!( 'registerElement' in document
+        && 'import' in document.createElement('link')
+        && 'content' in document.createElement('template') )) {
+      document.body.appendChild((function(e){
+        e.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
+        return e;
+      })(document.createElement('script')));
+    }
+    if(!('Intl' in window)) {
+      document.body.appendChild((function(e){
+        e.src = '/bower_components/intl/dist/Intl.min.js';
+        return e;
+      })(document.createElement('script')));
+    }
+    </script>
+  </body>
+</html>
